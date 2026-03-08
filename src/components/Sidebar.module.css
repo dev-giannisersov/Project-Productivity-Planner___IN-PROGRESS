@@ -1,0 +1,28 @@
+.sidebarContainer{
+    width: 200px;
+    height: 100vh;
+
+    background-color: #1f1d1d;
+    border-right: 1px solid rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    
+    transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0; 
+    white-space: nowrap;
+}
+
+.sidebarContainer:hover{
+    cursor: pointer;
+}
+
+.closed {
+  width: 40px;
+}
+
+.closed *{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
