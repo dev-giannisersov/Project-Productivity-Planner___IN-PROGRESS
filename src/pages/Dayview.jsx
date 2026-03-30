@@ -1,11 +1,11 @@
 import React from 'react'
 
-function AddView() {
+function DayView() {
   return (
     <div>
-      Add view
+      Day view
     </div>
   )
 }
 
-export default AddView
+export default DayView

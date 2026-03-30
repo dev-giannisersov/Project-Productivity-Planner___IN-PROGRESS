@@ -1,11 +1,11 @@
 import React from 'react'
 
-function WeekView() {
+function YearView() {
   return (
     <div>
-      week view
+      year view
     </div>
   )
 }
 
-export default WeekView
+export default YearView

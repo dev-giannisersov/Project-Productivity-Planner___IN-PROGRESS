@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './Sidebar.module.css'
-import { useState } from 'react';
+
+const navItems = [
+  { path: '/YearView', label: 'Yearly Consistency' },
+  { path: '/DayView', label: 'Daily Goals' },
+];
 
 function Sidebar() {
 

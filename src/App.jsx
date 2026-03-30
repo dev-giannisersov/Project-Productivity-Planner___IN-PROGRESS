@@ -3,8 +3,8 @@ import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
 import Layout from './components/Layout.jsx';
 
-import WeekView from './pages/WeekView.jsx';
-import AddView from './pages/AddView.jsx';
+import YearView from './pages/YearView.jsx';
+import DayView from './pages/DayView.jsx';
 import PageNotFound from './pages/PageNotFound.jsx';
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
     path: "/",
     element: <Layout />,
     children: [
-      {index: true, element: <WeekView />},
-      {path: "week", element: <WeekView />},
-      {path: "add", element: <AddView />},
+      {index: true, element: <DayView />},
+      {path: "Year", element: <YearView />},
+      {path: "Day", element: <DayView />},
     ]
     },
     {path: "*", element: <PageNotFound />}
