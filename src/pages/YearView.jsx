@@ -3,7 +3,7 @@ import React from 'react'
 function YearView() {
   return (
     <div>
-      year view
+      year views
     </div>
   )
 }

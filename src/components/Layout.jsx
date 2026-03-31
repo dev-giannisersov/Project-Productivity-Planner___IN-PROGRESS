@@ -3,9 +3,9 @@ import Sidebar from './Sidebar';
 
 const Layout = () => {
   return (
-    <div>
-       <Sidebar />
-       <Outlet /> 
+    <div style={{ display: 'flex' }}>
+      <Sidebar />
+      <Outlet />
     </div>
   );
 };

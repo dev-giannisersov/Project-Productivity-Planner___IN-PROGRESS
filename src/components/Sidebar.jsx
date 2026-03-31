@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 import styles from './Sidebar.module.css'
 
 const navItems = [
-  { path: '/YearView', label: 'Yearly Consistency' },
-  { path: '/DayView', label: 'Daily Goals' },
+  { path: '/Year', label: 'Yearly Consistency' },
+  { path: '/Day', label: 'Daily Goals' },
 ];
 
 function Sidebar() {
@@ -22,6 +22,14 @@ function Sidebar() {
     }
     onClick={() => {setIsOpen(!isOpen)}}>
         
+    {navItems.map((item) => (
+    <NavLink key={item.path} to={item.path}
+    onClick={(e) => e.stopPropagation()}>
+       {item.label}
+    </NavLink>
+    ))}
+
+
     </aside>
   )
 }
